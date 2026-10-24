@@ -1,0 +1,335 @@
+/*CONFIGURAÇÕES GERAIS DA PÁGINA*/
+body {
+    font-family: 'Courier New', Courier, monospace;   /* Define a fonte padrão estilo máquina de escrever para o site todo */
+    background-color: #F4CAD7;
+}
+#principal{
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: white;
+    border-radius: 19px;
+    padding-bottom: 2%;
+}
+
+#caixa {
+    width: 90%;          /* Ocupa 90% da largura disponível da tela */
+    margin: 10px auto;   /* Margem superior/inferior de 10px e centralizado nas laterais */
+    padding: 10px;       /* Espaçamento interno de 10px ao redor do conteúdo */
+}
+
+#titulo{
+    padding-top: 1%;
+    text-align: center;
+    border-top: 3px solid #D96B8A;
+    border-left: 3px solid #D96B8A;
+    border-right: 3px solid #D96B8A;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+}
+#titulo p{
+    font-size: 140%;
+    border-bottom: 3px solid #D96B8A;
+    margin-left: 33%;
+    margin-right: 33%;
+    padding-bottom: 0.5%;
+}
+#menu ul{
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-evenly;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-bottom: 3px solid #D96B8A;
+    border-radius: 30px;
+}
+#menu li:hover{
+    font-size: 160%;
+}
+#menu a{
+    font-size: 120%;
+}
+
+#caixa p{
+    text-align: center;
+    padding-top: 0.1%;
+}
+
+/*TIPOGRAFIA E TEXTOS*/
+p {
+    font-size: 110%;     /* Aumenta o tamanho do texto do parágrafo para 110% do padrão */
+    margin: 20px auto;   /* Centraliza o bloco do parágrafo na tela e dá espaço em cima/baixo */
+    text-align: justify; /* Alinha o texto esticado nas duas laterais (justificado) */
+}
+
+.tituloSubTitulo {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    font-weight: bold;   /* Deixa o texto em negrito */
+    text-align: center;  /* Centraliza o texto horizontalmente */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tituloSubTitulo h3{
+    padding-top: 0.3%;
+}
+
+h1 {
+    font-size: 250%;     /* Define o tamanho do título H1 como o dobro do padrão */
+}
+
+h2 {
+    font-size: 205%;     /* Define o tamanho do título H2 */
+}
+
+h3 {
+    font-size: 150%;     /* Define o tamanho do título H3 */
+}
+
+/*ESTILIZAÇÃO DE LINKS*/
+a:link {
+    text-decoration: none;
+    color: rgb(0, 0, 255);       /* Cor padrão para links ainda não visitados (azul puro) */
+}
+
+a:visited {
+    color: rgb(0, 11, 168);      /* Cor para links que já foram visitados */
+}
+
+a:active {
+    color: rgb(255, 0, 132);     /* Cor do link no exato momento do clique */
+}
+
+/*ESTILIZAÇÃO DA TABELA (IA Simbólica vs Conexionista)*/
+/* Container geral da tabela */
+.tabela {
+    font-family: Arial, sans-serif; /* Fonte limpa exclusiva para a tabela */
+    max-width: 800px;             /* Largura máxima de 800px */
+    margin: 20px auto;            /* Centralizada na página com margem vertical */
+    background-color: #ffffff;    /* Fundo branco */
+    padding: 20px;                /* Espaçamento interno */
+    border-radius: 8px;           /* Cantos arredondados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave ao redor */
+    border-left: 3px solid #D96B8A;
+    border-right: 3px solid #D96B8A;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* Estrutura interna da tabela */
+.tabela table {
+    width: 100%;                  /* Ocupa 100% da largura do container */
+    border-collapse: separate;    /* Permite controlar o espaçamento e bordas individualmente */
+    border-spacing: 0;            /* Remove o espaço padrão entre as células */
+    text-align: center;           /* Centraliza os textos dentro da tabela */
+}
+
+/* Título (caption) da tabela */
+.tabela caption {
+    font-size: 1.5rem;            /* Tamanho grande para o título */
+    font-weight: bold;            /* Negrito */
+    color: #333333;               /* Cor cinza escuro */
+    margin-bottom: 20px;          /* Espaço abaixo do título */
+    text-transform: uppercase;    /* Converte o texto todo para maiúsculas */
+    letter-spacing: 0.5px;        /* Espaçamento leve entre as letras */
+}
+
+/* Cabeçalhos (th) da tabela */
+.tabela th {
+    padding: 16px 12px;           /* Espaçamento interno do cabeçalho */
+    font-size: 1.1rem;            /* Tamanho da fonte do cabeçalho */
+    font-weight: bold;            /* Negrito */
+    border-top: 1px solid #b0bec5;    /* Linha superior cinza */
+    border-bottom: 1px solid #b0bec5; /* Linha inferior cinza */
+}
+
+/* Coluna 1 do Cabeçalho (IA Simbólica - Tom Azulado) */
+.tabela th:first-child {
+    background-color: #c0d9f8;    /* Fundo azul claro */
+    color: #0b2545;               /* Cor do texto em azul escuro */
+    border-left: 1px solid #b0bec5;   /* Borda lateral esquerda */
+    border-top-left-radius: 6px;  /* Arredonda o canto superior esquerdo */
+}
+
+/* Células da 1ª coluna (Corpo) */
+.tabela td:first-child {
+    background-color: #eaf2fc;    /* Fundo azul bem clarinho */
+    color: #1a1a1a;               /* Texto quase preto */
+    border-left: 1px solid #d0d7de;   /* Borda esquerda */
+}
+
+/* Coluna 2 do Cabeçalho (IA Conexionista - Tom Esverdeado) */
+.tabela th:last-child {
+    background-color: #bce5cb;    /* Fundo verde claro */
+    color: #063820;               /* Texto verde escuro */
+    border-right: 1px solid #b0bec5;  /* Borda lateral direita */
+    border-left: 1px solid #b0bec5;   /* Borda esquerda entre as colunas */
+    border-top-right-radius: 6px; /* Arredonda o canto superior direito */
+}
+
+/* Células da 2ª coluna (Corpo) */
+.tabela td:last-child {
+    background-color: #e2f4e9;    /* Fundo verde bem clarinho */
+    color: #1a1a1a;               /* Texto quase preto */
+    border-right: 1px solid #d0d7de;  /* Borda direita */
+    border-left: 1px solid #d0d7de;   /* Borda esquerda */
+}
+
+/* Células de dados gerais (td) */
+.tabela td {
+    padding: 14px 16px;           /* Espaçamento interno das células */
+    font-size: 1rem;              /* Tamanho normal da fonte */
+    border-bottom: 1px solid #d0d7de; /* Linha divisória inferior em cada linha */
+}
+
+/* Arredondamento do canto inferior esquerdo (última linha) */
+.tabela tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+/* Arredondamento do canto inferior direito (última linha) */
+.tabela tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}
+
+/*ESTILIZAÇÃO DE IMAGENS GERAIS*/
+img {
+    width: 500px;        /* Largura padrão padrão para imagens soltas */
+    height: auto;        /* Mantém a proporção correta para evitar distorções */
+    display: block;      /* Transforma a imagem em elemento de bloco */
+    margin: 0 auto;      /* Centraliza a imagem horizontalmente */
+
+    border: 4px solid #ffffff;       /* Borda branca grossa (estilo polaroid) */
+    border-radius: 12px;             /* Cantos arredondados suaves */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Sombra elegante ao redor */
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* CONTAINERS DE IMAGENS ESPECÍFICOS (Lado a Lado)*/
+/* Container para as fotos com GUI */
+
+/* Container para as fotos*/
+.fotosSemGUI{
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%; 
+}
+
+.fotosGUI{
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%; 
+}
+
+.defP img {
+    max-width: 800px;              
+    width: 100%;      
+    height: auto;
+}
+
+.diagramaC img {
+    max-width: 900px;              
+    width: 100%;      
+    height: auto;
+}
+
+
+.beth0 img {
+    max-width: 900px;              
+    width: 100%;      
+    height: auto;
+}
+
+.testesT img {
+    max-width: 900px;              
+    width: 100%;      
+    height: auto;
+}
+
+/* Testes */
+.testesDeComversa{
+    border-left: 3px solid #D96B8A; /* Coloca borda nos testes de conversas*/
+    border-right: 3px solid #D96B8A;
+    border-radius: 16px;
+    margin-left: 18%;
+    margin-right: 18%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%; 
+}
+.testesDeComversa h3{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+div.testesDeComversa p {
+    width: 100% !important;
+    display: block !important; /* Tira o flex e volta a ser um bloco de texto normal */
+    text-align: left !important; /* Força as letras para a esquerda */
+    margin: 0 0 15px 0 !important; /* Dá o espaço de uma linha para a outra embaixo */
+    padding: 0 !important; /* Remove preenchimentos que possam empurrar */
+}
+
+/* Parágrafos, listas etc */
+.paragrafo{
+    background-color: #c3c3c329;
+    padding-bottom: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border: 3px solid #fff;
+    border-left: 3px solid #D96B8A;
+    border-right: 3px solid #D96B8A;
+    border-radius: 13px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.lista ul{
+    list-style-type: disc; 
+    padding-left: 20px;
+}
+.lista li{
+    color: black;
+}
+.lista{
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-left: 7%;
+    padding-right: 5.5%;
+    border-left: 3px solid #D96B8A;
+    border-right: 3px solid #D96B8A;
+    border-radius: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+/* RODAPÉ (FOOTER)*/
+footer {
+    margin-top: 3%;
+    border-bottom: 3px solid #D96B8A;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;        /* Empilha os elementos principais de cima para baixo (texto em cima, links embaixo) */
+    align-items: center;           /* Centraliza tudo horizontalmente */
+    gap: 15px;                     /* Espaço entre o parágrafo de agradecimento e a linha de links */
+    padding: 20px;                 /* Espaçamento interno geral do rodapé */
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+}
+footer p{
+    font-size: 150%;
+}
+
+.grupo-links {
+    font-size: 110%;
+    display: flex;                 /* Coloca os links do rodapé lado a lado */
+    gap: 30px;                     /* Espaço horizontal exato entre cada link */
+}
+.grupo-links a:hover{
+    font-size: 120%;
+}

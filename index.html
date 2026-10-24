@@ -1,0 +1,299 @@
+<!-- file:///home/lui/IT/Web/Elizabeth/Web_Site.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizabeth | Web Site</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"> 
+    <link rel="stylesheet" href="ElizaWeb.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <main id="caixa">
+        <header>
+            <div id="titulo">
+                <h1>Elizabeth | Uma Inteligência Artificial Simbólica</h1>
+                <p>Criado por Luis Marcelo Madrid Miranda</p>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#contexto">Contexto</a></li>
+                    <li><a href="#origem">Origem</a></li>
+                    <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+                    <li><a href="#versoes">Versões</a></li>
+                    <li><a href="#simbolica">O que é uma IA Simbólica?</a></li>
+                    <li><a href="#eliza">ELIZA IA de 1966</a></li>
+                    <li><a href="#commits">Commits</a></li>
+                    <li><a href="#testes">Testes</a></li>
+                    <li><a href="#conclusao">Conclusão</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="principal">
+            <section id="contexto">
+                <div class="tituloSubTitulo">
+                    <h2>Contexto</h2>
+                    <h3>De onde veio e por que veio</h3>
+                </div>
+                <div class="paragrafo">
+                    <p>A Elizabeth veio da mente de um estudante de ADS no começo de tudo; bom, presumo que todos ou quase todos que começam uma faculdade hoje em dia que tenha programação pensam em fazer uma Inteligência Artificial (IA). É, foi isso que veio à minha mente quando iniciei o 1º Semestre da faculdade de Análise e Desenvolvimento de Sistemas (ADS)</p>
+                    <p>Então, tudo começou nesse momento, nesse tempo de início e fascínio pela programação e a ilusão de poder criar qualquer coisa sem nem pensar em como fazer, em como elaborar, pensar ou montar, com a ideia de que seria fácil fazer, só abrindo o VS Code e ir programar...</p>
+                    <p>Por fim, comecei a programar, mas isso vai ser abordado futuramente; por ora, o contexto é esse, a ilusão de um estudante iniciante querendo programar algo muito além do que era possível no 1º Semestre de uma faculdade</p>
+                </div>
+            </section>
+
+            <section id="origem">
+                <div class="tituloSubTitulo">
+                    <h2>Origem</h2>
+                    <h3>O começo de tudo</h3>
+                </div>
+                <div class="paragrafo">
+                    <p>Ao contrário do que muitos pensam ou vão pensar, a origem da Elizabeth não tem nada a ver com a ELIZA, a, provavelmente, primeira IA já criada (em 1966), embora seu nome seja realmente uma bela coincidência, seu propósito, hoje, seja muito parecido com o da Eliza de 66</p>
+                    <p>De cara, seu nome veio de uma personagem de um livro que eu estava lendo no período de seu início, Elizabeth, e, como no livro, seu apelido é Beth, logo muitas das vezes irei chamá-la pelo apelido, deixando Eliza para me referir à nossa amiga de 1966</p>
+                    <p>A Beth 0, como a chamo hoje, é algo de doer os olhos... Ela foi criada em 4h, dentro de um celular, sim, programada em um celular por um app de programação, e assim irei colocar fotos dela aqui, só para dar o gosto do que estou falando:</p>
+                </div>
+                <div class="fotos">
+                    <div class="beth0">
+                        <img src="/home/lui/IT/Web/Elizabeth/imagens/Beth_0.png" alt="Foto da Beth 0">
+                    </div>
+                </div>
+                <div class="paragrafo">
+                    <p>Caso você não tenha entendido o porquê de ela ser de doer os olhos, vou explicar: essa imagem mostra um Bot, sim, um Bot, se é que podemos chamar assim, um código feito simplesmente de if/elif, isso é o mesmo que falar que vou fazer 20 flexões e começar a fazê-las com ajuda dos joelhos...</p>
+                    <p>Entretanto, essa foi a origem do que irei mostrar aqui mais adiante, o começo, o que no dia parecia algo simplesmente sensacional, mas que logo se mostrou um simples código feio que um dia sim iria virar algo maior</p>
+                </div>
+            </section>
+
+            <section id="desenvolvimento">
+                <div class="tituloSubTitulo">
+                    <h2>Desenvolvimento</h2>
+                    <h3>O caminho de um bom Software</h3>
+                </div>
+                <div class="paragrafo">
+                    <p>As várias versões da Beth vão ser vistas mais à frente, no próximo tópico; aqui irei abordar o desenvolvimento da versão atual, para os altos, Beth 4.0</p>
+                    <p>Com o avanço da faculdade, não só aprendi a programar melhor como aprendi a importância de um planejamento, de fazer os modelos UML (Linguagem de Modelagem Unificada), de pensar antes de começar a escrever um código, e foi por aí que comecei, com a documentação, modelagem UML etc...</p>
+                    <p>Como parte escrita, eu delimitei as seguintes condições:</p>
+                </div>
+                    <div class="lista">
+                    <ul>
+                        <li>Vai ser simples, não vai prever tudo, mas sim poucas coisas, com isso a Beth vai conseguir fingir ser inteligente, como a primeira IA do mundo</li>
+                        <li>Para dar a ilusão de naturalidade, a Beth irá ter uma formação de palavras "aleatórias", por exemplo: Eu estou bem, isso se divide em três, Eu, estou e bem, o Eu podendo ter variações que podem ser combinadas com as outras variações do resto da frase, formando uma fala "aleatória" a cada uso do User</li>
+                        <li>Pensando em uma GUI, ela terá 1 entrada e 1 saída, só</li>
+                        <li>A Beth vai ter uma memória que em tempos e tempos será usada para formar perguntas para o User</li>
+                        <li>Ela reconhecerá: Saudações, Despedidas, Perguntas (simples, pessoal e sobre a Beth), Gritos (com ! ou letras em maiúsculas), Palavrões, Sentimentos tristes e Padrões (palavras-chave que podem voltar a ser usadas pela Beth)</li>
+                        <li>Sua lógica será de tentar responder com uma pergunta, caso falhe, algo vago irá ser retornado, tudo no mesmo esquema de "aleatoriedade" na formação das frases</li>
+                        <li>Seu propósito é ser uma amiga ou ouvinte, sua personalidade será gentil</li>
+                        <li>Seu código tem que ser curto, simples, direto</li>
+                    </ul>
+                </div>
+                <div class="paragrafo">
+                    <p>Isso foi o que defini para a Beth; com esse norte, eu já podia começar de forma muito mais elaborada a pensar em si na programação, mas, para ajudar ainda mais, coloquei em prática meus estudos de Engenharia de Software, criei os modelos UML para a Beth</p>
+                    <p>O primeiro que fiz, usando um programa chamado UMLet:</p>
+                </div>
+                <div class="fotos">
+                    <img src="/home/lui/IT/Web/Elizabeth/imagens/umlet_logo.png" alt="Foto do programa chamado UMLet">
+                </div>
+                <div class="paragrafo">
+                    <p>Foi o diagrama, um Diagrama de Casos de Uso</p>
+                </div>
+                <div class="fotos">
+                    <div class="diagramaC">
+                        <img src="/home/lui/IT/Web/Elizabeth/imagens/Beth_UML_Simples.jpg" alt="Foto do Diagrama de Casos de Uso">
+                    </div>
+                </div>
+                <div class="paragrafo">
+                    <p>Nesse diagrama eu defini o caminho que tudo ia percorrer, seguir, com suas possibilidades e objetivos</p>
+                    <p>O seguinte foi o diagrama de atividades, definindo o caminho da entrada de forma mais simples, para ter um norte mais claro para a programação</p>
+                </div>
+                <div class="fotos">
+                    <img src="/home/lui/IT/Web/Elizabeth/imagens/Beth_UML.png" alt="Foto do Diagrama de Atividade">
+                </div>
+                <div class="paragrafo">
+                    <p>E aí sim, depois desse passo cumprido/pensado, aí sim abri o VS Code e comecei a programar a Elizabeth</p>
+                    <p>Comecei pensando na ordem de prioridades, onde o código ia ver o que pode ou não misturar, por exemplo, se a pessoa falou oi e que está triste, o oi é excluído e o código dá foco total ao que aconteceu à pessoa, para tentar ajudar:</p>
+                </div>
+                <div class="fotos">
+                    <img src="/home/lui/IT/Web/Elizabeth/imagens/Orden_de_prioridades.png" alt="Foto da ordem de ação">
+                </div>
+                <div class="paragrafo">
+                    <p>Com isso em mente fui logo fazer o mais importante, a função principal do código todo, onde a entrada entra e é limpa e enviada para as funções que as classificam e geram a resposta correspondente</p>
+                </div>
+                <div class="fotos">
+                    <div class="defP">
+                        <img src="/home/lui/IT/Web/Elizabeth/imagens/def_principal.png" alt="Foto da função principal">
+                    </div>
+                </div>
+                <div class="paragrafo">
+                    <p>Aqui é onde tudo começa, onde tudo gira, onde o User (quem usa Software) consegue ver e falar com o código/IA</p>
+                    <p>Logo depois de algum tempo na programação, a Beth logo começou a falar, ainda via terminal, mas já com os primeiros passos, veja:</p>
+                </div>
+                <div class="fotos">
+                    <div class="fotosSemGUI">
+                        <img src="/home/lui/IT/Web/Elizabeth/imagens/eliza_terminal.png" alt="Beth terminal">
+                        <img src="/home/lui/IT/Web/Elizabeth/imagens/eliza_terminal_falando.png" alt="Beth falando via terminal">
+                    </div>
+                </div>
+                <div class="paragrafo">
+                    <p>E quando essa parte mais "chata" da programação foi feita, o próximo passo foi fazer a GUI (Interface Gráfica do Usuário), onde os User iam de fato usar o Software</p>
+                    <p>A GUI da Beth teve a inspiração de chats de conversas, WhatsApp, Telegram, Instagram etc... Com o estilo bonito, fácil de visualizar e intuitivo, seguindo a ideia geral do código, simplicidade</p>
+                </div>
+                <div class="fotos">
+                    <div class="fotosGUI">
+                        <img src="/home/lui/IT/Web/Elizabeth/imagens/eliza_GUI.png" alt="Beth GUI">
+                        <img src="/home/lui/IT/Web/Elizabeth/imagens/eliza_GUI_falando.png" alt="Beth falando via GUI">
+                    </div>
+                </div>
+                <div class="paragrafo">
+                    <p>E assim, depois de quatro semestres, a Elizabeth, uma IA Simbólica (irei falar mais sobre o termo Simbólica mais à frente) ficou pronta</p>
+                </div>
+            </section>
+
+            <section id="versoes">
+                <div class="tituloSubTitulo">
+                    <h2>Versões</h2>
+                    <h3>Antes do novo primeiro vem o velho</h3>
+                </div>
+                <div class="paragrafo">
+                    <p>É claro que um código como esse teria várias versões antes da versão que seria, assim, a ideal, e como você já deve ter notado, a Beth está na versão 4.0, ou seja, no mínimo existe outras 3 antes dessa</p>
+                    <p>E sim, tem outras versões, veja:</p>
+                </div>
+                    <div class="lista">
+                    <ul>
+                        <li>Beth 0: Primeira feita, com um monte de if/elif</li>
+                        <li>Beth 1.1: Embora melhor, segue a mesma lógica da Beth 0</li>
+                        <li>Beth 1.5: Primeira funcional de verdade, mas ainda um Bot simples de if/elif (Com 2394 linhas)</li>
+                        <li>Beth 1.6: Uma versão sem redundância da Beth 1.5, com um código muito mais limpo (Com 804 linhas)</li>
+                        <li>Beth 2.0: Primeira versão realmente boa, com uma lógica interessante de verificação de palavras na entrada, ainda com if/elif</li>
+                        <li>Beth 3.0: Ficou só no papel, nunca foi de fato programada, mas teve sua ideia derivada da 2.0</li>
+                        <li>Beth 3.1: Primeiros passos antes da Beth 4.0</li>
+                        <li>Beth 4.0 (Atual): De fato uma IA, simbólica, estruturada, pensada, analisando padrões, sem if/elif, feita com funções, memória, com um propósito</li>
+                    </ul>
+                </div>
+                <div class="paragrafo">
+                    <p>Na lista acima, se pode ver todas as versões da Beth, e ainda notar o que cada uma tinha; de fato, da 1.5 para 4.0 a evolução foi gigantesca, e claro, devo mencionar que tudo isso levou 4 semestres para ser feito (2 anos)</p>
+                    <p>Outro ponto é que a numeração não segue a ordem, por exemplo, pulo da 1.1 para 1.5 direto; isso eu fiz pois tudo que está no meio foram testes, logo a 1.2, 3 e 4 são testes, experimentos que levaram a 1.5, por isso deixei de fora</p>
+                </div>
+            </section>
+
+            <section id="simbolica">
+                <div class="tituloSubTitulo">
+                    <h2>O que é uma IA Simbólica?</h2>
+                    <h3>Qual a diferença das IAs de hoje?</h3>
+                </div>
+                <div class="paragrafo">
+                    <p>Se você chegou até aqui, ou você já sabe o que é uma IA simbólica ou ainda não sabe, mas calma, vou explicar de forma simples</p>
+                </div>
+                    <div class="tabela">
+                    <table>
+                        <caption>IA Simbólica VS IA Conexionista</caption>
+                        <thead>
+                            <tr><th>IA Simbólica</th>  <th>IA Conexionista</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Usa lógica e regras explícitas</td>  <td>Usa aprendizado a partir de dados</td></tr>
+                            <tr><td>Simula o raciocínio</td>  <td>Simula os neurónios (redes neurais)</td></tr>
+                            <tr><td>Representa o conhecimento por símbolos e regras</td>  <td>Representa o conhecimento em pesos ajustados</td></tr>
+                            <tr><td>Não aprende sozinha com dados</td>  <td>Aprende e se ajusta com dados</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="paragrafo">
+                    <p>Nessa tabela dá para ter uma noção do que cada uma faz. A diferença central não é "ajudar ou não": existem chatbots simbólicos, baseados em regras. O que separa as duas é <strong>como o conhecimento é representado e atualizado</strong>. A IA simbólica usa regras e lógica explícitas e não aprende sozinha com dados, ela só é atualizada por humanos</p>
+                    <p>Já a IA conexionista aprende a partir de exemplos, ajustando os pesos de uma rede neural, ela aprende com dados, mas não se reprograma de forma autónoma</p>
+                </div>
+            </section>
+
+            <section id="eliza">
+                <div class="tituloSubTitulo">
+                    <h2>ELIZA IA de 1966</h2>
+                    <h3>ELIZA, a 1º Inteligência Artificial existente?</h3>
+                </div>
+                <div class="paragrafo">
+                    <p>ELIZA foi um dos primeiros programas a simular uma conversa em linguagem natural, criada em 1966 pelo cientista da computação germano-americano Joseph Weizenbaum, no MIT AI Lab (Instituto de Tecnologia de Massachusetts)</p>
+                    <p>Seu propósito era simular uma psicóloga, como no script DOCTOR, inspirado na terapia rogeriana. A ELIZA também é uma IA simbólica, pois funcionava com regras e padrões explícitos, sem aprender com dados. Para a época, causou impacto por parecer extremamente realista, mas era apenas uma ilusão superficial, o chamado "Efeito ELIZA". O próprio Weizenbaum ficou alarmado com isso e tornou-se um crítico do entusiasmo acrítico em relação à IA</p>
+                </div>
+            </section>
+
+            <section id="commits">
+                <div class="tituloSubTitulo">
+                    <h2>Commits</h2>
+                    <h3>A linha de crescimento de um Software</h3>
+                </div>
+                <div class="paragrafo">
+                    <p>Antes de vermos sobre os testes da Beth, é importante mencionar sobre mais uma evolução do código; ao contrário das outras versões, essa foi a primeira que teve sua evolução guardada em um local mais seguro, com commits e observações reais, comparações e estudo em escritas antigas e atuais</p>
+                </div>
+            </section>
+
+            <section id="testes">
+                <div class="tituloSubTitulo">
+                    <h2>Testes</h2>
+                    <h3>Antes de entrar na batalha primeiro se treina</h3>
+                </div>
+                <div class="paragrafo">
+                    <p>Depois da programação, o mais importante são os testes, onde vemos se um Software realmente funciona, e bom, aqui sim achei o que arrumar, pois achei que tudo era perfeito (erro meu, como é dito em "O Programador Pragmático": Nunca vamos programar algo perfeito)</p>
+                    <p>Como eu não tinha muito com quem testar o código, fui para o caminho mais fácil que achei, coloquei a Beth para conversar com outras IAs, ChatGPT e DeepSeek (e com o tempo um colega meu da faculdade)</p>
+                </div>
+                <div class="fotos">
+                    <div class="testesT">
+                        <img src="/home/lui/IT/Web/Elizabeth/imagens/Testes.png" alt="Fotos dos arquivos de teste">
+                    </div>
+                </div>
+                <div class="paragrafo">
+                    <p>Como pode ver, fiz vários testes e, em cada um achei o que arrumar, até chegar onde quis, em um teste onde tudo estava aceitável. Vamos comparar um pouco o 1º teste com o último:</p>
+                </div>
+                    <div class="testesDeComversa">
+                        <h3>Teste 1 | ChatGPT_e_Eliza</h3>
+                        <p>- Beth: Olá, vamos nessa, é só digitar alguma coisa</p>
+                        <p>- Você: Hoje foi um dia meio estranho... aconteceu um monte de coisa e eu nem sei direito como me sinto</p>
+                        <p>- Beth: Hmm, prossiga</p>
+                        <p>- Você: Não sei... acho que estou um pouco cansado. Mas, ao mesmo tempo, não consigo parar de pensar nas coisas que aconteceram hoje.</p>
+                        <p>- Beth: Mmm, continue</p>
+                        <p>- Você: Acho que o que mais me incomoda é que eu queria conversar com alguém, mas nem sei exatamente sobre o que falar.</p>
+                        <p>- Beth: Sei, fale mais</p>
+                        <p>...</p>
+                </div>
+                <div class="paragrafo">
+                    <p>Bom, como se pode ver, a capacidade da Beth não era grande, mas com o tempo isso cresceu; para mostrar isso, veja o último teste feito:</p>
+                </div>
+                    <div class="testesDeComversa">
+                        <h3>Teste 6 | ChatGPT_e_Eliza_6</h3>
+                        <p>- Beth: Oi, vamos lá, manda uma palavra, uma frase, o que vier</p>
+                        <p>- Você: Hmm, então vou começar simples: café kkkkk. Não tem como dar errado. E aí, Beth, qual é a sua relação com café?</p>
+                        <p>- Beth: Legal.., você falou sobre 'cafe', conte-me/descreva mais</p>
+                        <p>- Você: Ah, café é praticamente combustível pra começar o dia kkkkk. Eu gosto daquele cheiro quando passa, principalmente de manhã. E você, Beth, prefere café forte ou mais fraquinho?</p>
+                        <p>- Beth: Isso que você disse 'comecou' é algo para ver, descreva mais</p>
+                        <p>- Você: Eu tava falando de começar o dia com café mesmo kkkkk. Tipo acordar meio morto, tomar um café e aos poucos voltar a funcionar. Você entendeu "começou" como outra coisa?</p>
+                        <p>- Beth: Vamos mudar de assunto?</p>
+                        <p>- Você: Bora kkkkk. 😄 Que tal falar de música? Tô curioso pra saber que tipo de música você curte, Beth.</p>
+                        <p>...</p>
+                </div>
+                <div class="paragrafo">
+                    <p>Bom, como se pode notar, ela teve uma evolução grande, claro que não é perfeita (veremos isso na conclusão), mas faz o que foi programada para fazer</p>
+                </div>
+            </section>
+
+            <section id="conclusao">
+                <div class="tituloSubTitulo">
+                    <h2>Conclusão</h2>
+                    <h3>O fim de uma era</h3>
+                </div>
+                <div class="paragrafo">
+                    <p>E por fim, aqui estamos nós, no final de tudo, como mencionado, a Beth 4.0 não é perfeita, longe disso, mas okay, pois é para isso que ela foi feita; ao contrário de suas irmãs, que tentavam prever tudo, essa não tenta, ela gira com suas falhas, se move com elas, tentando evitá-las e se virar mesmo com as dificuldades</p>
+                    <p>Esse é seu propósito, ser simples, funcional, e ela consegue. Outro ponto importante é que a Beth tem um "Easter egg", uma homenagem à ELIZA de 1966; em seu código ela tem a capacidade de ser uma psicóloga, uma ajudante, caso precise, a Beth consegue orientar e ajudar o User para não fazer escolhas erradas, ela sabe quando a pessoa está triste, passando mal ou quando quer fazer algo ruim, assim ajudando e orientando</p>
+                    <p>E depois de tanto tempo, enfim ficou pronta, e por fim, essa é a Beth 4.0, uma IA simbólica</p>
+                </div>
+            </section>
+
+        </div>
+        <footer>
+            <p>Obrigado por ler 🙂</p>
+            <div class="grupo-links">
+                <a href="https://www.youtube.com/@4F69-69">Meu canal no YouTube</a>
+                <a href="https://github.com/Lui-ads">Meu Github</a>
+                <a href="#caixa">Voltar para cima</a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
