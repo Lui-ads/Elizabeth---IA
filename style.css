@@ -333,3 +333,64 @@ footer p{
 .grupo-links a:hover{
     font-size: 120%;
 }
+
+/* Parte adicional feita por IA só para o site ficar visível no celular */
+
+@media (max-width: 768px) {
+    #titulo h1 {
+        font-size: 160%;
+    }
+
+    #titulo p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #menu ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    #menu li:hover {
+        font-size: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .fotosSemGUI,
+    .fotosGUI {
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+        gap: 10px;
+    }
+
+    .testesDeComversa {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .tabela {
+        overflow-x: auto;
+    }
+
+    .tabela table {
+        min-width: 450px;
+    }
+
+    footer {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .grupo-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
