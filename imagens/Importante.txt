@@ -1,0 +1,25 @@
+- Vai ser simples, não vai prever tudo, mas sim poucas coisas, com isso a Beth vai conseguir fingir ser inteligente, como a primeira IA do mundo
+
+- Para dar a ilusão de naturalidade a Beth ira ter uma formação de palavras "aleatórias", por exemplo: Eu estou bem, isso se divide em três, Eu,
+estou e bem, o Eu podendo ter variações que podem ser combinadas com as outras vairações do resto da frase, formando uma fala "aleatória" a cada
+uso do User
+
+- Pensando em uma GUI, ela terá 1 entrada e 1 saída, só
+
+- A Beth vai uma memória que em tempos e tempos será usada para formar perguntas para o User
+
+- Ela reconhecera: Saudações, Despedidas, Perguntas (simples, pessoal e sobre a Beth), Gritos (com ! ou letras em maiúsculas), Palavrões, Sentimentos tristes e Padrões (palavras chaves que podem voltar a ser usadas pela Beth)
+
+- Sua lógica será de tentar responder com uma pergunta, caso falha, algo vago irá ser retornado, tudo no mesmo esquema de "aleatoriedade" na
+formação das frases
+
+- Seu propósito é ser uma amiga ou ouvinte, sua personalidade será gentil
+
+Obs.: Seu código tem que ser curto, simples, direto
+
+
+Para o commit:
+
+No terminal: cd IT/Python/Elizabeth/Elizabeth_Git
+Depois da edição: git add Beth.py
+Depois do último comando: git commit -m "Sua mensagem aqui"
